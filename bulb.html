@@ -1,44 +1,34 @@
-<!DOCTYPE html>
-<head>
-    <title> js bulb</title>
-    <style>
-        body{
-            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGt_yj5bQ-WhtbAniIiwnHBHIt4AigOfV_Lg&s");
-            background-repeat: no-repeat;
-            background-size: cover;
+!DOCTYPE html>
+<html>
+<body>
+<style>
+        body {
+          background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720483200&semt=sph');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
         }
-    </style>
-</head>
-<body >
-    <center>
-      <img id="myImage" onclick="changeImage()" src="off bulb.jpg" width="250" height="250">
+        </style>
 
-    </center>
-    <h1 style="color:aliceblue"><u>ABOUT BULB</u></h1>
-    <h2 style="color: honeydew;"><p>The incandescent light bulb turns electricity into light by sending the electric current through a thin
-    wire called a filament. Electrical filaments are made up mostly of tungsten metal.The resistance of the filament heats the bulb. Eventually
-    the filament gets so hot that it glows, producing light.</p></h2>
-    <br>
-    <h2 style="color: honeydew;">TYPE OF LIGHT</h2>
-    <h3 style="color: honeydew;"><ul>
-        <li> fluorescent light</li>
-        <li> Compact fluorescent lights</li>
-        <li>light-emitting diode </li>
-    </ul></h3>
+<center><img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180"></center>
 
+<center><p style="color: rgb(14, 13, 13);">Click the light bulb to turn on/off the light.</p></center>
+<h1 style="color: rgb(17, 17, 16);"><u>About Bulb</u></h1>
+<h3><p style="color: rgba(15, 14, 15, 0.849);">Bulb. Bulb, in botany, a modified stem that is the resting stage of certain seed plants, particularly perennial monocotyledons. A bulb consists of a relatively large, usually globe-shaped, underground bud with membraneous or fleshy overlapping leaves arising from a short stem</p>
+<h1><p style="color: rgb(12, 245, 136);"></p></h1>
+<ul>
+    <h3 style="color: rgba(41, 230, 255, 0.849);"><lithree basic types of lighting </li>
+    </ul>
 <script>
 function changeImage() {
- var image = document.getElementById('myImage');
- if (image.src.match("bulbon")) {
-   image.src = "off bulb.jpg";
- } else {
-   image.src = "on bulub.jpg";
- }
+  var image = document.getElementById('myImage');
+  if (image.src.match("bulbon")) {
+    image.src = "pic_bulboff.gif";
+  } else {
+    image.src = "pic_bulbon.gif";
+  }
 }
-
-
 </script>
 </body>
 </html>
-
 
